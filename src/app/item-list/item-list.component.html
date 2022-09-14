@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lojinha</title>
+</head>
+<body>
+    <div class="titulo">
+        <mat-toolbar color="primary">
+           <img src="..\assets\surf.png" height ="50" width="50" />
+           <span>Loja</span>
+           <span class="example-spacer"></span>
+         </mat-toolbar>
+    </div>
+    <div class="menu-superior">
+        <div class="home">
+            <button mat-fab color="primary" aria-label="Example icon button with a home icon">
+                <mat-icon>home</mat-icon>
+              </button>
+        </div>
+        <div class="cadastros">
+            <button id="login" mat-raised-button color="primary">Login</button>
+            <button  id="registro" mat-raised-button color="primary">Cadastre-se</button>
+        </div>
+    </div>
+    <div class="img-central">
+        <img src="..\assets\surfer-animate.svg">
+    </div>
+    <div class="busca">
+        <input> <button mat-raised-button color="primary">Buscar</button>
+    </div>
+    <div class="tela-compra">
+        <div class="lista-produtos">
+            <mat-tab-group mat-align-tabs="center">
+                <mat-tab label="Pranchas">Pranchas</mat-tab>
+                <mat-tab label="Camisas">Protetores</mat-tab>
+                <mat-tab label="Bermudas">Content 3</mat-tab>
+                <mat-tab label="Protetores">Content 3</mat-tab>
+              </mat-tab-group>             
+        </div>
+        <div class="carrinho">
+            teste
+        </div>
+    </div>
+    
+</body>
+</html>
+
+

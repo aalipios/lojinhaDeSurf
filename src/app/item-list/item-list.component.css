@@ -1,0 +1,73 @@
+.menu-superior{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cadastros{
+    margin-top: 10px;
+    margin-right: 15px;
+}
+.home{
+    margin:15px;
+}
+
+.cadastros > button{
+    width: 8vw;
+    margin: 10px; 
+}
+
+.img-central{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    margin-left: 37.5vw;
+    margin-bottom: 20vh;
+    width: 25vw;
+    height: 25vh;
+}
+
+.tela-compra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista-produtos{
+    width: 70vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.carrinho{
+    width: 30vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.busca{
+    margin: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 10px 0px;
+}
+.busca > button{
+    border-radius: 10px;
+    margin-left: 15px;
+}
+.busca > input{
+    width: 40%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background: #3f51b5;
+    outline: none;
+    color: white;
+    box-sizing: border-box;
+}
