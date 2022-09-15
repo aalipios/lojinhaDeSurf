@@ -9,12 +9,32 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { List1Component } from './item-list/list1/list1.component';
+import {ReactiveFormsModule } from '@angular/forms';
+import {MatCardModule} from '@angular/material/card';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatStepperModule} from '@angular/material/stepper';
+import { CarrinhoComponent } from './carrinho/carrinho.component';
+import { TelaLoginComponent } from './tela-login/tela-login.component';
+import { TelaCadastroComponent } from './tela-cadastro/tela-cadastro.component';
+import { List2Component } from './item-list/list2/list2.component';
+import { List3Component } from './item-list/list3/list3.component';
+import { List4Component } from './item-list/list4/list4.component';
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ItemListComponent
+    ItemListComponent,
+    List1Component,
+    CarrinhoComponent,
+    TelaLoginComponent,
+    TelaCadastroComponent,
+    List2Component,
+    List3Component,
+    List4Component
   ],
   imports: [
     BrowserModule,
@@ -24,7 +44,11 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatIconModule,
     MatTabsModule,
     MatToolbarModule,
-    MatFormFieldModule
+    MatCardModule,
+    MatGridListModule,
+    ReactiveFormsModule,
+    MatStepperModule,
+    MatFormFieldModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,51 @@
+.carrinho{
+    margin-top: 50px;
+    width: 50%;
+    padding: 30px 35px;
+    background: #3f51b5;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0px 0px 20px black;
+}
+
+.botoes{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 10px 0px;
+}
+
+.botao{
+    width: 65%;
+    padding: 16px 0px;
+    margin-top: 15px;
+    border : none;
+    border-radius: 10px;
+    color: white;
+    background: #3f51b5;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px black;
+}
+
+
+#lixeira{
+    width: 40px;
+    border : none;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+    padding: 5px 0px;
+    box-shadow: 0px 0px 10px black;
+}
+
+#itens{
+    width: 40%;
+    padding: 5px 20px;
+    border : none;
+    border-radius: 5px;
+    background: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px black;
+}

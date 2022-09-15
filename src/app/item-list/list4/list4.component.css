@@ -1,0 +1,12 @@
+img{
+    height: 18vh;
+    width: 7vw;
+}
+
+button{
+    font-size: 12px;
+}
+
+.comprar{
+    box-shadow: 3px 3px 10px black;  
+}
