@@ -9,26 +9,27 @@
 </head>
 
 <body>
-    <div class="main-register">
+    <div class="main-register">  
+        <h1>Cadastro</h1>
         <div class="card-register">
             <div class="nome">
                 <div class="textfield">
-                    <label>Primeiro nome:</label>
+                    <label>Nome:</label>
                     <input type="text" name="nome">
                 </div>
-                <div class="textfield">
-                    <label>Último nome:</label>
-                    <input type="text" name="sobrenome">
-                </div>
-            </div>
-            <div class="email">
                 <div class="textfield">
                     <label>E-mail:</label>
                     <input type="text" name="email">
                 </div>
+            </div>
+            <div class="senha">
                 <div class="textfield">
-                    <label>Confirme o E-mail:</label>
-                    <input type="text">
+                    <label>Senha:</label>
+                    <input type="password" name="senha">
+                </div>
+                <div class="textfield">
+                    <label>Confirme a senha:</label>
+                    <input type="password">
                 </div>
             </div>
 
@@ -37,6 +38,10 @@
                     <label>CEP:</label>
                     <input type="text" name="cep">
                     <button id="cep" mat-raised-button color="primary"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="search"></mat-icon>Buscar</button>
+                </div>
+                <div class="textfield">
+                    <label>Estado:</label>
+                    <input type="text" name="estado">
                 </div>
             </div>
             <div class="endereco">
