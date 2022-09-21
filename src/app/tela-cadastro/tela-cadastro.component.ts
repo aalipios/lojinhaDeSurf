@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, Validators} from '@angular/forms';
-import { TelaCadastroService } from '../services/tela-cadastro.service';
+import { Usuario} from '../models/usuario.model'
+import { CadastroService } from '../services/cadastro.service';
 
 @Component({
   selector: 'app-tela-cadastro',
@@ -8,8 +9,12 @@ import { TelaCadastroService } from '../services/tela-cadastro.service';
   styleUrls: ['./tela-cadastro.component.css']
 })
 export class TelaCadastroComponent implements OnInit {
-
-  constructor() { }
+  
+  cadastro: Usuario = new Usuario;
+  
+  constructor(
+    public usuarioService: CadastroService
+  ) {}
 
   ngOnInit(): void {
   }

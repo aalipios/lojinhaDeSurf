@@ -20,6 +20,7 @@ import { TelaCadastroComponent } from './tela-cadastro/tela-cadastro.component';
 import { List2Component } from './item-list/list2/list2.component';
 import { List3Component } from './item-list/list3/list3.component';
 import { List4Component } from './item-list/list4/list4.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -49,6 +50,7 @@ import { List4Component } from './item-list/list4/list4.component';
     ReactiveFormsModule,
     MatStepperModule,
     MatFormFieldModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
