@@ -8,18 +8,9 @@ import { ProdutoService } from '../services/produto.service';
 })
 export class ItemListComponent implements OnInit {
 
-  constructor(
-    private product: ProdutoService
-  ) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.product.getProdutos().subscribe(
-      (data) => {
-        console.log(data);
-      },
-      (error) => {
-        console.log(error);
-      }
-    );
+
   }
 }

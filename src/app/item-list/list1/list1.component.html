@@ -1,10 +1,13 @@
 <mat-grid-list cols="4" rowHeight="40vh">
-    <mat-grid-tile>
+    <mat-grid-tile *ngFor="let product of produtos">
         <mat-card class="example-card">
-            <img mat-card-image src="..\assets\prancha.jpg">
+            <img mat-card-image src="{{product.url}}">
             <mat-card-content>
                 <p>
-                    Prancha 1
+                    {{product.name}}
+                </p>
+                <p>
+                    R$ {{product.preco}}
                 </p>
             </mat-card-content>
             <mat-card-actions>
@@ -15,116 +18,4 @@
             </mat-card-actions>
         </mat-card>
     </mat-grid-tile>
-    <mat-grid-tile>
-        <mat-card class="example-card">
-            <img mat-card-image src="..\assets\prancha.jpg">
-            <mat-card-content>
-                <p>
-                    Prancha 2
-                </p>
-            </mat-card-content>
-            <mat-card-actions>
-                <button class="comprar" mat-raised-button color="primary">
-                    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="shopping_cart"></mat-icon>
-                    COMPRAR
-                </button>
-            </mat-card-actions>
-        </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile>
-        <mat-card class="example-card">
-            <img mat-card-image src="..\assets\prancha.jpg">
-            <mat-card-content>
-                <p>
-                    Prancha 3
-                </p>
-            </mat-card-content>
-            <mat-card-actions>
-                <button class="comprar" mat-raised-button color="primary">
-                    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="shopping_cart"></mat-icon>
-                    COMPRAR
-                </button>
-            </mat-card-actions>
-        </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile>
-        <mat-card class="example-card">
-            <img mat-card-image src="..\assets\prancha.jpg">
-            <mat-card-content>
-                <p>
-                    Prancha 4
-                </p>
-            </mat-card-content>
-            <mat-card-actions>
-                <button class="comprar" mat-raised-button color="primary">
-                    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="shopping_cart"></mat-icon>
-                    COMPRAR
-                </button>
-            </mat-card-actions>
-        </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile>
-        <mat-card class="example-card">
-            <img mat-card-image src="..\assets\prancha.jpg">
-            <mat-card-content>
-                <p>
-                    Prancha 5
-                </p>
-            </mat-card-content>
-            <mat-card-actions>
-                <button class="comprar" mat-raised-button color="primary">
-                    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="shopping_cart"></mat-icon>
-                    COMPRAR
-                </button>
-            </mat-card-actions>
-        </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile>
-        <mat-card class="example-card">
-            <img mat-card-image src="..\assets\prancha.jpg">
-            <mat-card-content>
-                <p>
-                    Prancha 6
-                </p>
-            </mat-card-content>
-            <mat-card-actions>
-                <button class="comprar" mat-raised-button color="primary">
-                    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="shopping_cart"></mat-icon>
-                    COMPRAR
-                </button>
-            </mat-card-actions>
-        </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile>
-        <mat-card class="example-card">
-            <img mat-card-image src="..\assets\prancha.jpg">
-            <mat-card-content>
-                <p>
-                    Prancha 7
-                </p>
-            </mat-card-content>
-            <mat-card-actions>
-                <button class="comprar" mat-raised-button color="primary">
-                    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="shopping_cart"></mat-icon>
-                    COMPRAR
-                </button>
-            </mat-card-actions>
-        </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile>
-        <mat-card class="example-card">
-            <img mat-card-image src="..\assets\prancha.jpg">
-            <mat-card-content>
-                <p>
-                    Prancha 8
-                </p>
-            </mat-card-content>
-            <mat-card-actions>
-                <button class="comprar" mat-raised-button color="primary">
-                    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="shopping_cart"></mat-icon>
-                    COMPRAR
-                </button>
-            </mat-card-actions>
-        </mat-card>
-    </mat-grid-tile>
-</mat-grid-list>
+    </mat-grid-list>
