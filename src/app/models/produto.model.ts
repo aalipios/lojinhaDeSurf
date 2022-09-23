@@ -3,4 +3,5 @@ export class Produto{
     "name": string;
     "preco": number; 
     "url": string;
+    "tipo": number;
 }

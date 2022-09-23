@@ -68,3 +68,25 @@
     box-sizing: border-box;
     box-shadow: 0px 0px 10px black;
 }
+
+.produtoimg{
+    height: 18vh;
+    width: 7vw;
+    margin: 5px;
+}
+
+p{
+    text-align: center
+}
+
+button{
+    font-size: 12px;
+}
+
+.comprar{
+    box-shadow: 3px 3px 10px black;  
+}
+
+mat-card-actions{
+    text-align: center;
+}

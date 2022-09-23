@@ -11,13 +11,14 @@ export class List4Component implements OnInit {
   public produtos: Produto[] = [] ;
 
   constructor(private productService: ProdutoService) { }
+
   getProdutos(): void{
     this.productService.getProdutos().subscribe((produto: any) => {
       this.produtos = produto;
     })
-}
+  }
+
   ngOnInit(): void {
     this.getProdutos();
   }
-
 }
