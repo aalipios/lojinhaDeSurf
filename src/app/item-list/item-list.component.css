@@ -6,7 +6,7 @@
     justify-content: end;
 }
 
-.cadastros > button{
+.btn-top {
     width: 8vw;
     margin: 10px; 
     box-shadow: 5px 5px 10px black;
@@ -70,8 +70,8 @@
 }
 
 .produtoimg{
-    height: 18vh;
-    width: 7vw;
+    height: 120px;
+    width: 130px;
     margin: 5px;
 }
 
@@ -89,4 +89,15 @@ button{
 
 mat-card-actions{
     text-align: center;
+}
+
+@media only screen and (max-device-width: 900px) {
+    .img-central { width:60%; margin-left: 20vw; margin-top: 3vh; margin-bottom: 8vh;}
+    .cadastros {justify-content: space-around;}
+    .btn-top { width: 150px;}
+    .busca > input { width: 60%;}
+    .lista-produtos {width: 50vw;}
+    .tela-compra {display: flex; justify-content: space-around;}
+    .carrinho {width: 45%;}
+    .produtoimg{height: 100px; width: 80px; margin: 5px;}
 }

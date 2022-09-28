@@ -1,39 +1,41 @@
 <div class="cadastros">
-    <button id="login" mat-raised-button color="primary" [routerLink]="'login'">Login</button>
-    <button  id="registro" mat-raised-button color="primary" [routerLink]="'cadastro'">Cadastre-se</button>
+    <button class="btn-top" mat-raised-button color="primary" [routerLink]="'login'">Login</button>
+    <button class="btn-top" mat-raised-button color="primary" [routerLink]="'cadastro'">Cadastre-se</button>
 </div>
-    <div class="img-central">
-        <img src="..\assets\surfer-animate.svg">
+<div class="img-central">
+    <img src="..\assets\surfer-animate.svg">
+</div>
+<div class="busca">
+    <input> <button mat-raised-button color="primary">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="search"></mat-icon>Buscar
+    </button>
+</div>
+<div class="tela-compra">
+    <div class="lista-produtos">
+        <mat-grid-list cols="4" rowHeight="40vh">
+            <mat-grid-tile *ngFor="let product of produtos">
+                <mat-card class="example-card">
+                    <img class="produtoimg" mat-card-image src="{{product.url}}">
+                    <mat-card-content>
+                        <p>
+                            {{product.name}}
+                        </p>
+                        <p>
+                            R$ {{product.preco}}
+                        </p>
+                    </mat-card-content>
+                    <mat-card-actions>
+                        <button class="comprar" mat-raised-button color="primary">
+                            <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="shopping_cart">
+                            </mat-icon>
+                            COMPRAR
+                        </button>
+                    </mat-card-actions>
+                </mat-card>
+            </mat-grid-tile>
+        </mat-grid-list>
     </div>
-    <div class="busca">
-        <input> <button mat-raised-button color="primary"><mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="search"></mat-icon>Buscar</button>
+    <div class="carrinho">
+        <app-carrinho></app-carrinho>
     </div>
-    <div class="tela-compra">
-        <div  class="lista-produtos">
-            <mat-grid-list cols="4" rowHeight="40vh">
-                <mat-grid-tile *ngFor="let product of produtos">
-                    <mat-card class="example-card">
-                        <img class="produtoimg" mat-card-image src="{{product.url}}">
-                        <mat-card-content>
-                            <p>
-                                {{product.name}}
-                            </p>
-                            <p>
-                                R$ {{product.preco}}
-                            </p>
-                        </mat-card-content>
-                        <mat-card-actions>
-                            <button class="comprar" mat-raised-button color="primary">
-                                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="shopping_cart"></mat-icon>
-                                COMPRAR
-                            </button>
-                        </mat-card-actions>
-                    </mat-card>
-                </mat-grid-tile>
-                </mat-grid-list>    
-        </div>
-        <div class="carrinho">
-            <app-carrinho></app-carrinho>
-        </div>
-    </div>
-
+</div>
